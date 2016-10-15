@@ -21,12 +21,12 @@ class Currency
 
   def +(object)
     raise Error if object.code != code
-    object.value + value
+    value + object.value
   end
 
   def -(object)
     raise Error if object.code != code
-    object.value - value >= 0 ? object.value - value : 0
+    value - object.value
   end
 
   def *(factor)
