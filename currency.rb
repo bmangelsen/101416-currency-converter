@@ -33,14 +33,4 @@ class Currency
     Currency.new(value * factor, code)
   end
 
-
 end
-
-
-
-usd_100 = Currency.new(100, "USD")
-usd_200 = Currency.new(200, "USD")
-usd_100.==(usd_200)
-usd_100.+(usd_200)
-usd_100.-(usd_100)
-usd_423 = usd_100.*4.23
