@@ -6,7 +6,7 @@ The project is comprised of four files representing four classes:
 1. Currency
   * This class holds currency values and their corresponding country code.
   * It can be used to test if two currency objects are equal, and it can add or subtract currency values after checking if country codes are equal. It will also return a new currency object if given a fixnum or float by which to multiply.
-  * On initialization, users may enter currency values and codes via fixnum plus string (eg (100, "USD")), or simply string with symbol ($100).
+  * On initialization, users may enter currency values and codes via fixnum or float plus string (eg (100, "USD")), or simply string with symbol ($100).
   * If user attempts to enter a country code not identified in the initialization, object will return an error.
 2. CurrencyConverter
   * This class is initialized via hash holding country codes (key) and their current exchange rate (value).
