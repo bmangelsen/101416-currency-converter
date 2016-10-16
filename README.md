@@ -17,3 +17,9 @@ The project is comprised of four files representing four classes:
   * Based on the currency code of the currency object, it will return which country code represents the best investment between the two sets of rates.
 4. Error
   * This class holds the custom exception message "DifferentCurrencyCodeError" raised in the other classes.
+
+
+##### Sites used to test functionality
+
+[Conversion Rates](http://www.xe.com/currencyconverter/#rates) /
+[Active Currency Codes](https://en.wikipedia.org/wiki/ISO_4217#Active_codes)
