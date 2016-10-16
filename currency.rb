@@ -15,7 +15,7 @@ class Currency
       @value = value.to_f
     else
       @code = code
-      @value = value
+      @value = value.to_f
     end
   end
 
