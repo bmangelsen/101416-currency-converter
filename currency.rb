@@ -2,9 +2,21 @@ require_relative "./error"
 
 class Currency
 
-  def initialize(value, code)
-    @value = value
-    @code = code
+  def initialize(value, code = "")
+    @code_symbols =
+      { "$" => "USD",
+        "€" => "EUR",
+        "£" => "GBP",
+        "₹" => "INR" }
+    raise Error if !@code_symbols.include?(value.to_s[0]) && code == ""
+    if @code_symbols.include?(value.to_s[0])  #value.to_s allows us to take in float and check zero position
+      @code = @code_symbols[value[0]]
+      value[0] = ""
+      @value = value.to_f
+    else
+      @code = code
+      @value = value
+    end
   end
 
   def value
